@@ -1,0 +1,150 @@
+body {
+    background-image: url("img/sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#mitGridFront {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+        "head head head"
+        "menu menu menu"
+        "sf1 front sf2"
+        "foot foot foot";
+  }
+
+  #mitGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-areas:
+        "head head head head"
+        "menu menu menu menu"
+        "s1 title title s2"
+        "s1 image text s2"
+        "foot foot foot foot";
+  }
+
+  #gridHeader {
+      grid-area: head;
+      width: 100%;
+      background-color: #ffffff;
+  }
+
+  #gridMenu {
+      grid-area: menu;
+      width: 100%;
+      background-color: #ED3722;
+  }
+
+  #gridSpace1 {
+    grid-area: s1;
+    width: 100%;
+}
+
+#gridSpace2 {
+    grid-area: s2;
+    width: 100%;
+}
+
+#gridTitle {
+    grid-area: title;
+    width: 100%;
+    background-color: rgba(255,255,255,0.75);
+    padding: 2.5% 5% 2.5% 5%;
+    margin-top: 7.5%;
+}
+
+#gridText {
+    grid-area: text;
+    width: 100%;
+    background-color: rgba(255,255,255,0.75);
+    padding: 2.5% 5% 2.5% 5%;
+    margin-top: 7.5%;
+    margin-left: 5%;
+    margin-bottom: 7.5%;
+    font-size: 22px;
+}
+
+#gridImage {
+    grid-area: image;
+    width: 100%;
+    margin-top: 7.5%;
+    margin-right: 5%;
+    margin-bottom: 7.5%;
+}
+
+#charImg {
+    width: 100%;
+}
+
+  #gridSpaceFront1 {
+      grid-area: sf1;
+      width: 100%;
+  }
+
+  #gridSpaceFront2 {
+      grid-area: sf2;
+      width: 100%;
+  }
+
+  #gridFront {
+      grid-area: front;
+      width: 100%;
+      background-color: rgba(255,255,255,0.75);
+      padding: 2.5% 5% 2.5% 5%;
+      margin-top: 7.5%;
+      margin-bottom: 7.5%;
+      font-size: 22px;
+  }
+
+  #gridFooter {
+      grid-area: foot;
+      width: 100%;
+      background-color: #696969;
+      text-align: center;
+      color: #ffffff;
+      padding: 1% 0% 1% 0%;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+  }
+
+  #banner {
+      display: block;
+      margin: auto;
+      width: 60%;
+  }
+
+  #menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+    font-size: 28px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #3AB54A;
+  }
+
+  h1 {
+      text-align: center;
+      font-size: 60px;
+  }
